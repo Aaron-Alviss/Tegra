@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tegra ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Petits cœurs/particules en background -->
+  <div id="particles"></div>
+
+  <main class="app">
+    <!-- Barre de progression -->
+    <header class="topbar">
+      <div class="progress-info">Question <span id="current">0</span> / <span id="total">10</span></div>
+      <div class="progress">
+        <div id="progressBar" class="progress-fill" style="width:0%"></div>
+      </div>
+      <button id="soundToggle" class="sound" aria-label="Activer/Désactiver le son">🔊</button>
+    </header>
+
+    <!-- Écran d'accueil -->
+    <section id="intro" class="card active">
+      <div class="gallery">
+          <!-- Placez vos photos dans le dossier /images/ et remplacez ces noms si besoin -->
+          <img src="images/tegra1.jpg.jpeg" loading="lazy" alt="Tegra1" class="g g1">
+          <img src="images/tegra2.jpg.jpeg" loading="lazy" alt="Tegra2" class="g g2">
+          <img src="images/tegra3.jpg.jpeg" loading="lazy" alt="Tegra3" class="g g3">
+          <img src="images/tegra4.jpg.jpeg" loading="lazy" alt="Tegra4" class="g g4">
+      </div>
+      <h1 class="title">Tegra ❤️</h1>
+      <p class="subtitle">J’ai préparé quelque chose spécialement pour toi…</p>
+      <button id="startBtn" class="big-btn">Appuie ici ❤️</button>
+    </section>
+
+    <!-- Zone des questions -->
+    <section id="game" class="card">
+      <div id="questionCard" class="question-card">
+        <h2 id="questionText" class="question"></h2>
+        <div id="choices" class="choices" role="list"></div>
+        <div id="followUp" class="followup"></div>
+      </div>
+    </section>
+
+    <!-- Écran final -->
+    <section id="final" class="card">
+      <div class="final-card">
+        <h2>Et voilà… ❤️</h2>
+        <p>Merci d’avoir joué jusqu’au bout, Tegra.</p>
+        <p>Toutes ces questions avaient finalement un seul objectif…</p>
+        <div id="pause" class="pause">(…)</div>
+        <h3>Te rappeler à quel point tu comptes pour moi. ❤️</h3>
+        <p>Tegra, j’espère qu’on aura encore énormément de souvenirs à créer ensemble.</p>
+        <h2 class="love">Je t’aime ❤️</h2>
+        <button id="surpriseBtn" class="big-btn">J’ai une dernière chose à te dire…</button>
+      </div>
+    </section>
+
+    <!-- Message final secret -->
+    <div id="secret" class="secret">
+      <p>Peu importe les réponses que tu as données à ce jeu… ma réponse à moi reste toujours la même : <strong>je te choisis. ❤️</strong></p>
+      <p class="sig">— Aaron ❤️</p>
+      <button id="restart" class="small-btn">Recommencer</button>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
